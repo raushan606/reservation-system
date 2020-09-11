@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //* Define Routes
 app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
-app.use("/api/unidetails", require("./routes/uniDetails"));
+app.use("/api/reservation", require("./routes/reservation"));
 
 app.listen(PORT, () => {
   console.log(`Server is up on port number ${PORT}`);
